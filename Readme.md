@@ -16,13 +16,13 @@ Visualizes patterns through an interactive Dash dashboard
 
 📂 Code Structure
 notebooks/
-├── week1.ipynb    → Data quality check, EDA, visualizations
-├── week2.ipynb    → PySpark ETL, feature engineering
-├── week3.ipynb    → Geospatial analysis, hotspot detection
-└── week4.ipynb    → ML model training (Random Forest, XGBoost)
+ ── week1.ipynb    → Data quality check, EDA, visualizations
+ ── week2.ipynb    → PySpark ETL, feature engineering
+ ── week3.ipynb    → Geospatial analysis, hotspot detection
+ ── week4.ipynb    → ML model training (Random Forest, XGBoost)
 
 visualization/
-└── dashboard.py   → Interactive Plotly Dash app
+── dashboard.py   → Interactive Plotly Dash app
 
 config/
 requirements.txt
