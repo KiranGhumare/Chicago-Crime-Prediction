@@ -119,12 +119,14 @@ python visualization/dashboard.py
 👥 Team Contributions
 Neethu Sathravada (Me):
 
-Data preprocessing and cleaning (Week 1)
-PySpark ETL pipeline and feature engineering (Week 2)
-Geospatial analysis with H3 and DBSCAN (Week 3)
-Machine learning models (Random Forest, XGBoost) (Week 4)
+Data preprocessing and cleaning (Week 1) PySpark ETL pipeline and feature engineering (Week 2) Geospatial analysis with H3 and DBSCAN (Week 3)
 
-Kiran Ghumare: Interactive Plotly Dash dashboard
+Kiran Ghumare:
+
+Machine learning models (Random Forest, XGBoost) (Week 4) 
+Interactive Plotly Dash dashboard 
+Code cleanup
+
 Sajitha Mathi: Project report and documentation
 
 🤖 AI-Assisted Development
