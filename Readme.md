@@ -4,7 +4,7 @@ Built with: PySpark • XGBoost • Random Forest • DBSCAN • H3 Geospatial �
 
 📌 Project Summary
 This project predicts crime categories and identifies hotspots across Chicago using 8 million historical crime records. The system uses distributed computing (PySpark) to handle massive datasets, machine learning for prediction, and geospatial analysis for hotspot detection.
-Results: 50-60% accuracy predicting crime categories | 8-12 major hotspots identified | Interactive dashboard with real-time predictions
+Results: 48-52% accuracy predicting crime categories | 8-12 major hotspots identified | Interactive dashboard with real-time predictions
 
 🎯 What This Project Does
 
@@ -52,10 +52,10 @@ Key Result: Identified 8-12 major crime hotspot regions (Austin, Englewood, Sout
 
 Week 4: Machine Learning (notebooks/week4.ipynb)
 
-Trained Random Forest (55% accuracy) and XGBoost (60% accuracy)
+Trained Random Forest (46% accuracy) and XGBoost (52% accuracy)
 Feature importance: Hour > District > Month > Location
 Implemented top-2 prediction strategy for practical use
-Key Achievement: 50-60% accuracy on 12-class problem (previously <20% on 100+ classes)
+Key Achievement: 48-52% accuracy on 4-class problem (previously <20% on 16+ classes)
 
 Dashboard (visualization/dashboard.py)
 
@@ -70,9 +70,9 @@ Problem: 8M rows crashed Pandas
 Solution: Migrated to PySpark for distributed processing
 Impact: Reduced processing time from hours → 15 minutes
 2. Severe Class Imbalance
-Problem: 100+ crime types, many with <1000 occurrences
-Solution: Grouped into 12 high-level categories (Violent, Property, Drug, etc.)
-Impact: Model accuracy jumped from <20% → 60%
+Problem: 16+ crime types, many with <1000 occurrences
+Solution: Grouped into 4 high-level categories (Violent, Property, Drug/Vice and Other)
+Impact: Model accuracy jumped from <20% → 52%
 3. Missing GPS Coordinates
 Problem: 200k+ rows had invalid lat/long
 Solution: Filtered invalid coordinates, used district info as fallback
@@ -90,7 +90,7 @@ Visualization: Matplotlib, Seaborn, Plotly Dash
 Environment: Jupyter Notebooks, Python 3.8+
 
 📊 Results
-MetricValueDataset Size8M records (7.9GB)Model Accuracy50-60% (12 categories)Hotspots Found8-12 major regionsProcessing Time~15 minutesMost Important FeatureHour of day (0.28)
+MetricValueDataset Size8M records (7.9GB)Model Accuracy48-52% (4 categories)Hotspots Found8-12 major regionsProcessing Time~15 minutesMost Important FeatureHour of day (0.28)
 Key Insights:
 
 27% arrest rate across all crimes
