@@ -40,7 +40,7 @@ Week 2: Feature Engineering (notebooks/week2.ipynb)
 
 Built PySpark ETL pipeline (Pandas couldn't handle 8M rows)
 Extracted temporal features: hour, day_of_week, month, season, is_weekend
-Reduced 100+ IUCR crime codes → 12 interpretable categories
+Reduced 16+ IUCR crime codes → 4 interpretable crime categories
 Key Decision: Category-level prediction instead of exact IUCR codes (solved class imbalance)
 
 Week 3: Geospatial Analysis (notebooks/week3.ipynb)
