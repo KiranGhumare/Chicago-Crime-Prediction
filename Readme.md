@@ -8,7 +8,7 @@ Built with: PySpark • XGBoost • Random Forest • DBSCAN • H3 Geospatial �
 
 This project predicts crime categories and identifies hotspots across Chicago using 8 million historical crime records. The system uses distributed computing (PySpark) to handle massive datasets, machine learning for prediction, and geospatial analysis for hotspot detection.
 
-**Results:** 50–60% accuracy predicting crime categories | 8–12 major hotspots identified | Interactive dashboard with real-time predictions
+**Results:** 48–50% accuracy predicting crime categories | 8–12 major hotspots identified | Interactive dashboard with real-time predictions
 
 ---
 
@@ -72,7 +72,7 @@ README.md
 ### Week 2: Feature Engineering (`notebooks/week2.ipynb`)
 - Built PySpark ETL pipeline (Pandas couldn't handle 8M rows)
 - Extracted temporal features: hour, day_of_week, month, season, is_weekend
-- Reduced 100+ IUCR crime codes → 12 interpretable categories
+- Reduced 100+ IUCR crime codes → 4 interpretable categories
 - **Key Decision:** Category-level prediction instead of exact IUCR codes (solved class imbalance)
 
 ### Week 3: Geospatial Analysis (`notebooks/week3.ipynb`)
@@ -103,7 +103,7 @@ README.md
 
 **2. Severe Class Imbalance**
 - Problem: 100+ crime types, many with <1000 occurrences
-- Solution: Grouped into 12 high-level categories (Violent, Property, Drug, etc.)
+- Solution: Grouped into 4 high-level categories (Violent, Property, Drug, Other)
 - Impact: Model accuracy jumped from <20% → 60%
 
 **3. Missing GPS Coordinates**
@@ -135,7 +135,7 @@ README.md
 | Metric | Value |
 |---|---|
 | Dataset Size | 8M records (7.9GB) |
-| Model Accuracy | 50–60% (12 categories) |
+| Model Accuracy | 48–50% (4 categories) |
 | Hotspots Found | 8–12 major regions |
 | Processing Time | ~15 minutes |
 | Most Important Feature | Hour of day (0.28) |
